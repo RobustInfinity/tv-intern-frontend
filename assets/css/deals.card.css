@@ -1,0 +1,254 @@
+.deals-card-container {
+    width: 33%;
+    height: 5%;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.deals-card-main {
+    margin: 0 1rem;
+    border-radius: 7px;
+    border: 1px solid #e8ebf2;
+    background-color: white;
+}
+
+.deals-card-img {
+    width: 100%;
+    height: 12rem;
+    background-size: cover;
+    position: relative;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.deals-card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.3);
+    width: 100%;
+    height: 3rem;
+}
+
+.deals-card-img-overlay-title {
+    margin: 0;
+    color: white;
+    padding: 5px 5px;
+}
+
+.deals-card-img-overlay-address {
+    margin: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px 5px;
+}
+
+.deals-second-row {
+    height: 5rem;
+    position: relative;
+    padding: 0 10px;
+    background-color: #fafafa;
+}
+
+.deals-card-vertically-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tending-card-like-icon {
+    height: 15px;
+    width: 15px;
+    color: #aaa;
+}
+
+.deals-card-like-count {
+    height: 15px;
+    width: 15px;
+    color: #aaa;
+    left: 1.5rem;
+    font-size: 12px;
+}
+
+.deals-card-comment-icon {
+    height: 15px;
+    width: 15px;
+    color: #aaa;
+    left: 4rem;
+}
+
+.deals-card-comment-count {
+    height: 15px;
+    width: 15px;
+    color: #aaa;
+    left: 5.5rem;
+    font-size: 12px;
+}
+
+.deals-card-category {
+    /*height: 15px;*/
+    /*width: 15px;*/
+    color: #aaa;
+    right: 0.5rem;
+    color: rgba(252, 156, 4, 1);
+}
+
+
+.deals-third-row {
+    min-height: 2rem;
+    position: relative;
+}
+
+.deals-card-user-image {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.deals-card-description {
+    font-size: 13px;
+    color: #a5a5a5;
+}
+
+
+.deals-card-vendor-rating {
+    font-size: 12px;
+    margin-left: 10px;
+    border-radius: 2px;
+    background-color: #00cfce;
+    height: 20px;
+    color: white;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.deals-card-rating-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.deals-card-review-count {
+    margin-left: 20px;
+    color: white;
+}
+.deals-card-review-count span {
+    font-size: 12px;
+    color: #2c3249;
+}
+
+.deals-fourth-row {
+    width: 100%;
+    height: 3rem;
+    position: relative;
+}
+
+.product-badge {
+    background-color: #89d13b;
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 13px;
+    width: 4rem;
+    text-align: center;
+}
+
+.service-badge {
+    background-color: #68d4f9;
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 13px;
+    width: 4rem;
+    text-align: center;
+}
+
+.deals-card-vendor-image {
+    min-height: 2rem;
+    min-width: 2rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.third-row-buttons {
+    width: 50%;
+    height: 2rem;
+    background-color: white;
+    border: 1px solid #fafafa;
+    font-size: 16px;
+    color: #2c3249;
+}
+
+.deals-discount-button {
+    background-color: #89d13b;
+    color: white;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    padding: 10px 5px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.deals-original-price {
+    font-size: 24px;
+    padding: 2px 5px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .deals-card-container {
+        width: 100%;
+    }
+
+    .deal-vendor-name-mobile {
+        left: 20% !important;
+    }
+
+    .deals-card-product-mobile {
+        font-size: 12px;
+        left: 20%!important;
+    }
+
+    .deals-card-review-count {
+        margin-left: 5px!important;
+    }
+
+    .share-deals-card-mobile {
+        right: 26% !important;
+    }
+
+    .deals-card-img {
+        height: 10rem!important;
+    }
+    .deals-card-vendor-rating {
+        width: 40px;
+        font-size: 8px;
+    }
+    .deals-card-review-count span {
+        font-size: 10px;
+    }
+}

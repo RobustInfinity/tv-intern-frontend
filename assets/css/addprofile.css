@@ -1,0 +1,245 @@
+.add-pofile-container {
+    overflow: auto;
+    background-color: white;
+}
+
+.add-profile-main-content {
+    margin-top: 6.5rem;
+    margin-bottom: 2rem;
+}
+
+.add-profile-label-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.a-p-label {
+    opacity: 0.5;
+    font-family: Avenir-Roman;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c3249;
+    margin-top: 20px;
+}
+
+.a-p-input-no-icon {
+    border: solid 1px #cfd2d4;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #2c3249;
+    width: 100%;
+    margin-top: 5px;
+    display: block;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+.a-p-form-container {
+    width: 584px;
+    margin: 0 auto;
+}
+
+.add-profile-label-container h1 {
+    margin: 0 0 10px 0;
+}
+
+.a-p-dropdown {
+    border: solid 1px #cfd2d4;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #2c3249;
+    width: 372px;
+    display: block;
+    height: 45px;
+}
+
+.a-p-button {
+    background-color: #ff9f00;
+    color: white;
+    height: 45px;
+    width: 170px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.a-p-dropdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.a-p-add-button {
+    background-color: #ff9f00;
+    color: white;
+    height: 45px;
+    width: 120px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 370px;
+    margin-top: 20px;
+}
+
+.a-p-lg-button {
+    background-color: #ff9f00;
+    color: white;
+    height: 45px;
+    width: 120px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 270px;
+    margin-top: 20px;
+}
+
+.a-p-text-area {
+    width: 100%;
+    height: 95px;
+    border: solid 1px #cfd2d4;
+    border-radius: 3px;
+    margin-top: 5px;
+    padding: 10px;
+    font-family: Avenir-Roman;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c3249;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.a-p-timings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.a-p-timings select {
+    height: 40px;
+    background-color: white;
+    width: 200px;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.a-p-timings span {
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.a-p-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.a-p-tags-button {
+    height: 40px;
+    background-color: #ff9f00;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin: 5px 1%;
+}
+
+.a-s-model-items {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.a-s-model-icons {
+    fill: #d2d6e4;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.a-s-model-right-element {
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.a-s-label-close-button {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.a-s-label {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #2c3249;
+}
+
+@media screen and (max-width: 640px) {
+    .add-profile-label-container h1 {
+        font-size: 20px;
+    }
+    .a-p-form-container {
+        width: 90%;
+    }
+    .a-s-model-items {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .a-s-model-icons {
+        margin-right: 5px;
+    }
+    .a-s-label-close-button {
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mobile-margin {
+        margin-top: 20px;
+    }
+
+    .a-p-timings select {
+        width: auto;
+        flex: 1
+    }
+}

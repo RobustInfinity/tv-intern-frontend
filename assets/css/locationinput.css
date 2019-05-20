@@ -1,0 +1,149 @@
+.location-search-container {
+    width: 180px;
+    height: 40px;
+}
+
+.location-toggle-button {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    position: relative;
+}
+
+.location-toggle-icon-container {
+    width: 30px;
+    position: relative;
+}
+
+.location-toggle-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #ff9f00;
+}
+
+.location-toggle-icon-not-active {
+    fill: rgba(0,0,0,0.6);
+    margin-bottom: 2px;
+    height: 17px;
+}
+
+.location-text-container {
+    position: relative;
+    width: 120px;
+}
+
+.location-text-container-not-active {
+    position: relative;
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.location-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    white-space: nowrap;
+    font-size: 14px;
+    transform: translate(-50%, -50%);
+}
+
+.not-active-icon-container {
+    display: inline-block;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.location-text-not-active {
+    fill: #ff9f00;
+    font-size:14px;
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,0.6);
+}
+
+.location-text-dropdown-icon-container {
+    position: relative;
+    width: 30px;
+}
+
+.location-text-dropdown-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.location-input-container {
+    position: relative;
+    width: 150px;
+}
+
+.location-input {
+    border: none;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.location-search-ul {
+    margin: 0;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    background-color: white;
+    max-height: 150px;
+    overflow: auto;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.location-search-ul li {
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 0 10px 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.location-search-ul li:hover {
+    background-color: rgba(255, 159, 0, 0.7);
+    color: white;
+}
+
+.location-list-label {
+    color: #89959B;
+    height: auto;
+    font-size: 12px;
+    line-height: 18px;
+    cursor: default;
+    background-color:#EFF2F6;
+    padding: 5px 0 5px 5px!important;
+}
+
+@media screen and (max-width: 768px) {
+    .location-search-container {
+        width: 270px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    .location-text-container {
+        width: 210px;
+    }
+    .location-text {
+        left: 0;
+        transform: translateY(-50%);
+    }
+}

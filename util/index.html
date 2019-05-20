@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Title</title>
+
+</head>
+<body>
+<link rel="stylesheet" href="https://res.cloudinary.com/trustvardi/raw/upload/v1529305246/Avenir_Roman_gfllmz.otf">
+<style type="text/css">
+    * {
+        font-family: Avenir, sans-serif;
+    }
+
+    .newsletter-main-container {
+        min-width: 320px;
+        max-width: 950px;
+        display: block;
+        margin: auto;
+    }
+
+    .news-letter-landing-image {
+        width: 100%;
+    }
+
+    .news-letter-about-us-container {
+        text-align: center;
+        margin: 20px auto 0 auto;
+        display: block;
+        width: 90%;
+    }
+
+    .landing-page-about-label {
+        display: block;
+        color: rgba(89, 74, 165, 1);
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .landing-page-about-text {
+        display: block;
+        line-height: 1.8;
+    }
+
+    .create-account-button {
+        text-decoration: none;
+        background-color: #ff9f00;
+        color: white;
+        padding: 5px 15px;
+        display: block;
+        width: 40%;
+        margin: 30px auto 0 auto;
+        border-radius: 3px;
+    }
+
+    .profile-container {
+        margin-top: 30px;
+        overflow: auto;
+    }
+
+    .profile-container-div {
+        display: inline-block;
+        width: 30%;
+        margin: 0 1%;
+        float: left;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 295px;
+        object-fit: cover;
+    }
+
+    .profile-name {
+        color: rgba(89, 74, 165, 1);
+        font-size: 24px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .profile-description {
+        font-size: 14px;
+        text-align: center;
+        color: #a5a5a5;
+    }
+
+    .video-rectangle-box {
+        position: relative;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .video-thumbnail {
+        height: 300px;
+    }
+
+    .video-label {
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        font-size: 40px;
+        letter-spacing: 2px;
+        color: rgba(89, 74, 165, 1);
+    }
+
+    .video-description {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .social-icon {
+        height: 15px;
+        width: 15px;
+        vertical-align: sub;
+        margin: 0 5px;
+    }
+
+    .in-it-image {
+        width: 100%;
+    }
+
+    .in-in-image-mobile {
+        display: none;
+        width: 100%;
+    }
+
+    .feature-brand {
+        display: none;
+    }
+
+    .profile-container-mobile {
+        display: none;
+    }
+
+    .news-letter-landing-image-mobile {
+        width: 100%;
+        display: none;
+    }
+
+    @media screen and (max-width: 765px) {
+        body {
+            margin: 0 !important;
+        }
+
+        .create-account-button {
+            width: 70% !important;
+            font-size: 14px !important;
+        }
+
+        .profile-container-div {
+            width: 100% !important;
+            margin: 0 0 20px 0!important;
+        }
+
+        .profile-img {
+            object-position: top !important;
+            width: 70%!important;
+            height: 295px!important;
+            object-fit: cover!important;
+            margin: 0 auto!important;
+            display: block!important;
+        }
+
+        .profile-description {
+            /*margin: 0 5% 20px 22% !important;*/
+            display: block !important;
+            color: black !important;
+            font-size: 12px !important;
+        }
+
+        .profile-container {
+            /*display: none !important;*/
+        }
+
+        .video-rectangle-box {
+            margin-top: 40px !important;
+        }
+
+        .video-thumbnail {
+            top: -100px !important;
+            height: 200px !important;
+            width: 90% !important;
+        }
+
+        .video-label {
+            display: none !important;
+        }
+
+        .video-description {
+            font-size: 12px !important;
+            width: 100% !important;
+        }
+
+        .landing-page-about-label {
+            font-size: 24px !important;
+        }
+
+        .in-in-image-mobile {
+            display: block !important;
+        }
+
+        .in-it-image {
+            display: none !important;
+        }
+
+        .profile-container-mobile {
+            display: block !important;
+            margin: 0 10px 0 10px !important;
+            overflow: auto !important;
+        }
+
+        .profile-container-div-mobile {
+            position: relative !important;
+            height: 200px !important;
+            margin: 20px 0 20px 20% !important;
+        }
+
+        .profile-img-mobile {
+            position: absolute !important;
+            height: 150px !important;
+            top: 50% !important;
+            left: -23% !important;
+            transform: translateY(-50%) !important;
+        }
+
+        .profile-img-mobile-right {
+            position: absolute !important;
+            height: 150px !important;
+            width: 120px !important;
+            top: 50% !important;
+            right: -23% !important;
+            transform: translateY(-50%) !important;
+        }
+
+        .profile-container-div-mobile-right {
+            margin-right: 20% !important;
+            position: relative !important;
+            height: 200px !important;
+            border: 1px solid black !important;
+        }
+
+        .profile-description-mobile {
+            margin: 0 22% 20px 5% !important;
+            display: block !important;
+            color: black !important;
+            font-size: 12px !important;
+        }
+
+        .feature-brand {
+            display: block !important;
+        }
+
+        .news-letter-landing-image-mobile {
+            display: block !important;
+        }
+
+        .news-letter-landing-image {
+            display: none !important;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .profile-img-mobile {
+            height: 120px !important;
+            /*width: 110px;*/
+        }
+
+        .profile-img-mobile-right {
+            height: 120px !important;
+            width: 96px !important;
+        }
+
+    }
+</style>
+<div class="newsletter-main-container">
+    <img class="news-letter-landing-image"
+         src="https://res.cloudinary.com/trustvardi/image/upload/v1530532277/Web_1920_17_1_su4gvv.png" alt="">
+    <img class="news-letter-landing-image-mobile"
+         src="https://res.cloudinary.com/trustvardi/image/upload/v1530382544/pic_1_1_ytw5vz.png" alt="">
+    <div class="news-letter-about-us-container">
+        <span class="landing-page-about-label">About Us</span>
+        <span class="landing-page-about-text">TrustVardi is a "Search & Discovery" platform that enables you to browse through multiple brands, read reviews, experience and share your own stories. Made exclusively for millennials, by the millennials, TrustVardi is a first-hand recommendation platform that lets you skim through brands and pick the one that caters to your whims and fancies.</span>
+    </div>
+    <div class="news-letter-about-us-container">
+        <span class="landing-page-about-label">Looking to grow your business? join us.</span>
+        <a class="create-account-button" href="https://goo.gl/ZZ8pwe" target="_blank">Let's get started</a>
+    </div>
+    <!--<div style="background-color:rgba(89, 74, 165, 1); height: 30px; margin-top:30px ">-->
+
+    <!--</div>-->
+    <div>
+        <div class="video-rectangle-box">
+            <a href="https://www.facebook.com/trustvardi/videos/237092446854317/" target="_blank"><img
+                    class="video-thumbnail"
+                    src="https://res.cloudinary.com/trustvardi/image/upload/v1529309593/video_ijlkyi.jpg" alt=""></a>
+        </div>
+    </div>
+    <div style="margin-top: 30px">
+        <img class="in-it-image"
+             src="https://res.cloudinary.com/trustvardi/image/upload/v1530424510/Web_1920_20_1_lmd5an.png" alt="">
+        <img class="in-in-image-mobile"
+             src="https://res.cloudinary.com/trustvardi/image/upload/v1530424510/Android_Mobile_10_1_dxi5eg.png" alt="">
+    </div>
+    <div style="margin-top: 30px">
+        <img class="in-it-image"
+             src="https://res.cloudinary.com/trustvardi/image/upload/v1530424691/Web_1920_22_1_y2efwv.png" alt="">
+        <img class="in-in-image-mobile"
+             src="https://res.cloudinary.com/trustvardi/image/upload/v1530424510/Android_Mobile_11_1_hupi7j.png" alt="">
+    </div>
+    <div class="profile-container">
+        <div style="text-align: center; margin-bottom: 20px">
+            <span class="landing-page-about-label">Featured Brands</span>
+        </div>
+        <div class="profile-container-div">
+            <img class="profile-img"
+                 src="https://res.cloudinary.com/trustvardi/image/upload/v1529307156/19931617_1455018894582264_5611916049772445696_n_thurwd.jpg"
+                 alt="">
+            <a href="https://www.trustvardi.com/profile/mrbutton" target="_blank" class="profile-name">Mr Button</a>
+            <span class="profile-description">Whether it's a wedding or a date night, an important meeting or a party, a well tailored suit is required every now and then, but it's not available everywhere. We feel you and so does Mr.Button.</span>
+        </div>
+        <div class="profile-container-div">
+            <img class="profile-img"
+                 src="https://res.cloudinary.com/trustvardi/image/upload/v1529307858/17437802_403278700050153_9151195571006996480_n_znmt40.jpg"
+                 alt="">
+            <a href="https://www.trustvardi.com/profile/eggsup" target="_blank" class="profile-name">Eggs up</a>
+            <span class="profile-description">We're all too caught up in the shackles of monotony, that it's always a struggle to whether wake up early to cook breakfast or sleep 5 minutes more? Well, now you can do both!</span>
+        </div>
+        <div class="profile-container-div">
+            <img class="profile-img"
+                 src="https://res.cloudinary.com/trustvardi/image/upload/v1530096875/Screen_Shot_2018-06-27_at_1.20.41_PM_h7ttqt.png"
+                 alt="">
+            <a href="https://www.trustvardi.com/profile/gympik" target="_blank" class="profile-name">Gympik</a>
+            <span class="profile-description">Just when you feel you’re too tired of not being fit, download gympik app and pick your fitness place right away. Or if not that, just browse through their blogs and you’ll get your health fix.</span>
+        </div>
+    </div>
+    <!--<div class="profile-container-mobile">-->
+        <!--<div style="background-color: #c8c3e1" class="profile-container-div-mobile">-->
+            <!--<img class="profile-img-mobile"-->
+                 <!--src="https://res.cloudinary.com/trustvardi/image/upload/v1529307156/19931617_1455018894582264_5611916049772445696_n_thurwd.jpg"-->
+                 <!--alt="">-->
+            <!--<a href="https://www.trustvardi.com/profile/mrbutton" target="_blank" class="profile-name">Mr Button</a>-->
+            <!--<span class="profile-description">Whether it's a wedding or a date night, an important meeting or a party, a well tailored suit is required every now and then, but it's not available everywhere. We feel you and so does Mr.Button.</span>-->
+        <!--</div>-->
+        <!--<div class="profile-container-div-mobile-right">-->
+            <!--<img class="profile-img-mobile-right"-->
+                 <!--src="https://res.cloudinary.com/trustvardi/image/upload/v1529307858/17437802_403278700050153_9151195571006996480_n_znmt40.jpg"-->
+                 <!--alt="">-->
+            <!--<a href="https://www.trustvardi.com/profile/eggsup" target="_blank" class="profile-name">Eggs up</a>-->
+            <!--<span class="profile-description-mobile">We're all too caught up in the shackles of monotony, that it's always a struggle to whether wake up early to cook our breakfast or sleep 5 minutes (which often leads to more time) more? Well, now you can do both!</span>-->
+        <!--</div>-->
+        <!--<div style="background-color: #c8c3e1" class="profile-container-div-mobile">-->
+            <!--<img class="profile-img-mobile"-->
+                 <!--src="https://res.cloudinary.com/trustvardi/image/upload/v1530096875/Screen_Shot_2018-06-27_at_1.20.41_PM_h7ttqt.png"-->
+                 <!--alt="">-->
+            <!--<a href="https://www.trustvardi.com/profile/gympik" target="_blank" class="profile-name">Gympik</a>-->
+            <!--<span class="profile-description">Just when you feel you’re too tired of not being fit, download gympik app and pick your fitness place right away. Or if not that, just browse through their blogs and you’ll get your health fix.</span>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div style="margin-top: 30px">
+        <img class="in-it-image"
+             src="https://res.cloudinary.com/trustvardi/image/upload/v1530380827/Web_1920_21_1_sw58ta.png" alt="">
+        <img class="in-in-image-mobile"
+             src="https://res.cloudinary.com/trustvardi/image/upload/v1530381376/pic_2_1_dl41pb.png" alt="">
+    </div>
+
+    <div style="background-color: rgba(89, 74, 165, 1); margin-top: 60px; text-align: center; overflow: auto">
+        <span style="color: white; text-align: center; margin-top: 20px; display: block">If you have any questions, e-mail us at: info@trustvardi.com</span>
+        <div>
+                <span style="color: white; display: block;margin-top: 10px; margin-bottom: 10px">
+                Follow us on:
+                    <a href="https://www.facebook.com/trustvardi/" target="_blank">
+                        <img class="social-icon"
+                             src="https://res.cloudinary.com/trustvardi/image/upload/v1527848432/icons/app_icons_-10.svg"
+                             alt="">
+                    </a>
+                <a href="https://www.instagram.com/trustvardi/" target="_blank">
+                    <img class="social-icon"
+                         src="https://res.cloudinary.com/trustvardi/image/upload/v1527848432/icons/app_icons_-09.svg"
+                         alt="">
+                </a>
+                <a href="https://twitter.com/trustvardi" target="_blank">
+                    <img class="social-icon"
+                         src="https://res.cloudinary.com/trustvardi/image/upload/v1527848433/icons/app_icons_-11.svg"
+                         alt="">
+                </a>
+                <a href="https://www.linkedin.com/company/trustvardi/" target="_blank">
+                    <img class="social-icon"
+                         src="https://res.cloudinary.com/trustvardi/image/upload/v1527848432/icons/app_icons_-08.svg"
+                         alt="">
+                </a>
+                <a href="https://www.youtube.com/channel/UCE1R6EPAG6f3dhKKXS1T1_Q" target="_blank">
+                    <img class="social-icon"
+                         src="https://res.cloudinary.com/trustvardi/image/upload/v1527848431/icons/app_icons_-12.svg"
+                         alt="">
+                </a>
+                </span>
+        </div>
+        <span style="color: white; margin-bottom: 10px; display: block">Visit us on: <a
+                style="text-decoration: none; color:white" href="https://www.trustvardi.com" target="_blank">https://www.trustvardi.com</a></span>
+    </div>
+</div>
+<center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="canspamBarWrapper"
+           style="background-color:#FFFFFF; border-top:1px solid #E5E5E5;">
+        <tr>
+            <td align="center" valign="top" style="padding-top:20px; padding-bottom:20px;">
+                <table border="0" cellpadding="0" cellspacing="0" id="canspamBar">
+                    <tr>
+                        <td align="center" valign="top"
+                            style="color:#606060; font-family:Helvetica, Arial, sans-serif; font-size:11px; line-height:150%; padding-right:20px; padding-bottom:5px; padding-left:20px; text-align:center;">
+                            This email was sent to <a href="mailto:*|EMAIL|*" target="_blank"
+                                                      style="color:#404040 !important;">*|EMAIL|*</a>
+                            <br>
+                            <a href="*|ABOUT_LIST|*" target="_blank" style="color:#404040 !important;"><em>why did I get
+                                this?</em></a>    <a href="*|UNSUB|*" style="color:#404040 !important;">unsubscribe from
+                            this list</a>    <a href="*|UPDATE_PROFILE|*" style="color:#404040 !important;">update
+                            subscription preferences</a>
+                            <br>
+                            *|LIST:ADDRESSLINE|*
+                            <br>
+                            <br>
+                            *|REWARDS|*
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <style type="text/css">
+        @media only screen and (max-width: 480px) {
+            table#canspamBar td {
+                font-size: 14px !important;
+            }
+
+            table#canspamBar td a {
+                display: block !important;
+                margin-top: 10px !important;
+            }
+        }
+    </style>
+</center>
+</body>
+</html>

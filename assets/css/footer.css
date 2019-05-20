@@ -1,0 +1,226 @@
+.footer-main-container {
+    background-color: rgba(89, 74, 165, 1);
+    border-top: 1px solid #fafafa;
+    color: white;
+    min-width: 1000px;
+    /* position: absolute;
+    z-index: 2; */
+    
+}
+.mail_class {
+    text-decoration: none;
+    color: #f3f3f3;
+}
+.mail_class:hover {
+    color: white;
+}
+
+.footer-container {
+    margin: 15px 11rem 0 11rem;
+    position: relative;
+    overflow: hidden;
+    /* min-width: 1000px; */
+}
+
+.about-us-section {
+    display: inline-block;
+    width: 33%;
+    float: left;
+}
+
+.company-section {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    left: 20%;
+}
+
+
+.instagram-section {
+    display: inline-block;
+    width: 35%;
+    position: relative;
+    left: 29%;
+}
+
+.label-footer {
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    height: 20px;
+    margin-top: 0px;
+    margin-bottom: 17px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    width: 160px;
+}
+
+.about-us-content {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    text-align:justify;
+    width: 100%;
+}
+
+.footer-list {
+    list-style: none;
+    font-size: 14px;
+    color: #f3f3f3;
+}
+.footer-list ul:hover {
+    color: white;
+}
+
+.footer-list ul {
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.instagram-pic {
+    height: 45px;
+    width: 45px;
+    margin-bottom: 6px;
+    margin-right: 12px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid white;
+    transition: all 0.1s ease-in 0.1s;
+}
+
+.instagram-pic:hover {
+    height: 50px;
+    width: 50px;
+    border-color: #cccccc;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.view-all-photo {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f3f3f3;
+    margin-top: 8px;
+    float: left;
+}
+ .whatsapp {
+    font-size: 14px;
+    color: white;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    display: flex;
+    width: 120px;
+    align-items: center;
+    text-decoration: none;
+ }
+
+ .whatsapp:hover {
+     color: yellowgreen;
+ }
+
+.view-all-photo:hover{
+    color: white;
+}
+
+.footer-bottom {
+    margin: 0 11rem;
+    color: #fafafa;
+    overflow: hidden;
+    height: 3.9rem;
+    position: relative;
+    border-top: 1px solid white;
+}
+
+
+.copy-right-text {
+    float: left;
+    color: white;
+    font-size: 12px;
+}
+
+.social-icons-footer {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    fill: white;
+}
+
+.social-icons-footer:hover {
+    background-color: white;
+    fill: rgba(89, 74, 165, 1);
+}
+
+.footer-social-icon-right {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-main-container-mobile {
+        overflow: hidden;
+        min-width: 1000px;
+    }
+    .about-us-section-mobile {
+        margin: 10px 25px;
+    }
+    .about-us-content-mobile {
+        width: 100%;
+        line-height: 1.69;
+    }
+    .company-section-mobile {
+        margin: 10px 25px;
+    }
+    .instagram-section-mobile {
+        margin: 10px 25px;
+        overflow: auto;
+        width: 100%;
+    }
+    .footer-bottom-mobile {
+        text-align: center;
+        height: 3rem;
+        position:relative;
+        border-top: 1px solid rgba(44, 50, 73, 0.1);
+        border-bottom: 1px solid rgba(44, 50, 73, 0.1);
+        margin: 0 25px;
+    }
+
+    .footer-mobile-instagram {
+        width: 60% !important;
+    }
+
+    .copy-right-text-mobile {
+        color: #2c3249;
+        font-size: 12px;
+        position: absolute;
+        transform:translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 80%;
+    }
+    .footer-bottom-social-icons {
+        height: 4rem;
+    }
+}

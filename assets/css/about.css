@@ -1,0 +1,51 @@
+.about-us-main-container {
+    overflow: auto;
+    background-color: white;
+}
+
+.about-us-holder {
+    margin: 150px 25%;
+}
+
+.about-us-title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.about-us-content-main {
+    font-size: 18px!important;
+    line-height: 30px;
+    color: #505050!important;
+    /* margin-right: 0; */
+    text-align: justify;
+}
+
+.about-us-view-profile {
+    font-size: 16px;
+    /*font-weight: 500;*/
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 6px;
+    background-color: #fdb934;
+    border: none;
+    padding: 10px 25px;
+    font-family: 'Avenir', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-us-holder {
+        margin: 100px 1rem;
+    }
+
+    .about-us-content-main {
+        font-size: 18px!important;
+        line-height: 25px;
+        color: #505050!important;
+        margin-right: 0;
+    }
+}

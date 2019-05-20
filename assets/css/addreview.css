@@ -1,0 +1,210 @@
+.add-review-label-desktop {
+    text-align: center;
+}
+
+.add-review-desktop {
+    overflow: auto;
+    max-height: 640px;
+}
+
+.add-review-title-container-desktop {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-review-title-desktop {
+    width: 70%;
+    height: 30px;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+.add-review-close-button {
+    float: right;
+    height: 20px;
+    width: 20px;
+}
+
+.dv-star-rating-star {
+    font-size: 30px!important;
+}
+
+.add-review-rating-label-desktop {
+    margin: 10px 0;
+}
+
+.add-review-rating-container-desktop {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.add-review-image-button-container-desktop {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.add-review-image-button-desktop {
+    font-size: 15px;
+    background-color: white;
+    color: rgba(252, 156, 4, 1);
+    border: 1px solid rgba(252, 156, 4, 1);
+    transition: all 0.2s ease-in;
+    outline: none;
+    border-radius: 3px;
+    height: 42px;
+    text-align: center;
+}
+
+.add-review-image-button-desktop:hover {
+    background-color: rgba(252, 156, 4, 1);
+    color: white;
+}
+
+.add-review-content-container-desktop {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.add-review-content-desktop {
+    width: 70%;
+    padding: 10px 10px;
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+.DraftEditor-root {
+    width: 70%;
+    display: block;
+    padding: 10px 10px;
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.4);
+    margin: 0 auto;
+    min-height: 150px;
+}
+
+.add-review-content-container-desktop .DraftEditor-root {
+    width: 70%!important;
+    display: block;
+    padding: 10px 10px;
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.4)!important;;
+    margin: 0 auto;
+    min-height: 150px!important;;
+}
+
+.add-review-content-mobile {
+    width: 90%;
+    padding: 10px 10px;
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.4);
+    outline: none;
+    text-align: left;
+    min-height: 150px;
+}
+
+.add-review-button-container {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.add-review-add-button {
+    font-size: 15px;
+    background-color: white;
+    color: rgba(252, 156, 4, 1);
+    border: 1px solid rgba(252, 156, 4, 1);
+    transition: all 0.2s ease-in;
+    outline: none;
+    border-radius: 3px;
+    width: 100px;
+    height: 42px;
+    text-align: center;
+}
+
+.add-review-add-button:hover {
+    background-color: rgba(252, 156, 4, 1);
+    color: white;
+}
+
+.add-review-image-container-desktop {
+    text-align: center;
+}
+
+.add-review-image-gallery-desktop {
+    height: 100px;
+    object-fit: cover;
+    margin: 0 10px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s ease-in;
+}
+
+.add-review-title-mobile {
+    width: 90%;
+    height: 30px;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+.add-review-content-container-desktop .ql-toolbar.ql-snow {
+    display: none;
+}
+.add-review-content-container-desktop .ql-editor.ql-blank::before {
+    font-style: normal;
+}
+
+.add-review-content-container-desktop .ql-container.ql-snow {
+    width: 70%;
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.4)!important;
+    display: block;
+    margin: 0 auto;
+    min-height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .DraftEditor-root {
+        width: auto;
+        font-size: 14px;
+    }
+    .add-review-image-gallery-desktop {
+        width: 23%;
+        object-fit: cover;
+        margin: 0 2%;
+        display: inline-block;
+        position: relative;
+        transition: all 0.2s ease-in;
+    }
+    .add-review-content-container-desktop .DraftEditor-root {
+        width: auto!important;
+        font-size: 14px!important;
+    }
+    [contenteditable=true]:empty:before {
+        content: attr(placeholder);
+        display: block; /* For Firefox */
+        color: rgba(0,0,0,0.4);
+    }
+
+
+    .add-review-content-container-desktop .ql-container.ql-snow {
+        width: 90%;
+        resize: none;
+        border-radius: 6px;
+        border: 1px solid rgba(0,0,0,0.4)!important;
+        outline: none;
+        text-align: left;
+        min-height: 150px;
+        display: block;
+        margin: 0 auto;
+    }
+}
